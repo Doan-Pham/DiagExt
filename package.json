@@ -16,12 +16,20 @@
       {
         "command": "diagext.generateClassDiagramPlantUml",
         "title": "DiagExt: Generate Class Diagram (PlantUML)"
+      },
+      {
+        "command": "diagext.generateClassDiagramPng",
+        "title": "DiagExt: Generate Class Diagram (PNG)"
       }
     ],
     "menus": {
       "explorer/context": [
         {
           "command": "diagext.generateClassDiagramPlantUml",
+          "when": "explorerResourceIsFolder"
+        },
+        {
+          "command": "diagext.generateClassDiagramPng",
           "when": "explorerResourceIsFolder"
         }
       ]

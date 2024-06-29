@@ -12,10 +12,20 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "diagext.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "diagext.helloWorld",
+        "title": "DiagExt: Generate Class Diagram (PNG)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "diagext.helloWorld",
+          "when": "explorerResourceIsFolder"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",

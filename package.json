@@ -14,14 +14,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "diagext.helloWorld",
+        "command": "diagext.generateClassDiagramPNG",
         "title": "DiagExt: Generate Class Diagram (PNG)"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "diagext.helloWorld",
+          "command": "diagext.generateClassDiagramPNG",
           "when": "explorerResourceIsFolder"
         }
       ]

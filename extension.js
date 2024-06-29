@@ -1,6 +1,7 @@
 const vscode = require("vscode");
 const { exec } = require("child_process");
 const path = require("path");
+const os = require("os");
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -38,17 +39,9 @@ function activate(context) {
       }
 
       console.log("Diagram Name:", diagramName);
-      const jarPath = path.join(
-        "C:",
-        "Users",
-        "phamm",
-        "PhuongPhapLapTrinh",
-        "diagext-java-parser",
-        "out",
-        "artifacts",
-        "diagext_java_parser_jar",
-        "diagext-java-parser.jar"
-      );
+
+      const downloadsPath = path.join(os.homedir(), "Downloads");
+      const jarPath = path.join(downloadsPath, "diagext-java-parser.jar");
       const command = `java -jar "${jarPath}" "${uri.fsPath}" "${outputPath}" "${diagramName}"`;
       console.log("Executing command:", command);
 

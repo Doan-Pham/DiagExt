@@ -8,7 +8,7 @@ const path = require("path");
 function activate(context) {
   console.log('Congratulations, your extension "diagext" is now active!');
   const disposable = vscode.commands.registerCommand(
-    "diagext.generateClassDiagramPNG",
+    "diagext.generateClassDiagramPlantUml",
     async (uri) => {
       console.log(uri.fsPath);
 

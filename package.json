@@ -14,14 +14,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "diagext.generateClassDiagramPNG",
-        "title": "DiagExt: Generate Class Diagram (PNG)"
+        "command": "diagext.generateClassDiagramPlantUml",
+        "title": "DiagExt: Generate Class Diagram (PlantUML)"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "diagext.generateClassDiagramPNG",
+          "command": "diagext.generateClassDiagramPlantUml",
           "when": "explorerResourceIsFolder"
         }
       ]

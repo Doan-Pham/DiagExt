@@ -2,6 +2,11 @@
   "name": "diagext",
   "displayName": "Diag Ext",
   "description": "Extension to generate beautiful diagrams from your source code",
+  "icon": "assets/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Doan-Pham/DiagExt"
+  },
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.90.0"

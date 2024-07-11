@@ -2,6 +2,7 @@
   "name": "diagext",
   "displayName": "Diag Ext",
   "description": "Extension to generate beautiful diagrams from your source code",
+  "publisher": "DoanPham",
   "icon": "assets/logo.png",
   "repository": {
     "type": "git",
